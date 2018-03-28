@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<section>
+
+	<table style="width:100%;border-collapse:separate;border-spacing:0 1em;">
+		<colgroup>
+			<col>
+			<col width="20%">
+		</colgroup>
+
+		{% for post in site.posts %}
+			<tr>
+				<td class="title">
+					<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+				</td>
+				<td>
+					<span class="post-date">{{ post.date | date: "%d. %b %Y" }}</span>
+				</td>
+			</tr>
+		{% endfor %}
+	</table>
+
+</section>
+

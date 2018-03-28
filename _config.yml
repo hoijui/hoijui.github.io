@@ -1,0 +1,73 @@
+# Site Info
+title:              "in abstraction"
+#title:              "🝣" symbol for purity
+#title:              "(Lost|Found)? in abstraction"
+description:        "things this human can share"
+#description:        "Free & Open Source content that might be useful"
+
+# Google APIs
+google_verify:      false # Your Google Verification - set to 'false' to disable
+google_analytics:   false # Your Google Analytics code - set to 'false' to disable
+
+# Author Info
+author:             "Robin Vobruba"
+author_email:       hoijui.quaero@gmail.com
+#author_gravatar:    04d7c98a619ef669b7afb0d2ed30b491 # Gravatar md5 hash (of email) here for logo - set to 'false' to disable
+author_gravatar:    false # Gravatar md5 hash (of email) here for logo - set to 'false' to disable
+twitter_username:   false
+github_username:    hoijui
+
+# Site Settings
+url:                https://hoijui.github.io # main url
+baseurl:            null # Required by github-pages plugin
+repository:         hoijui/hoijui.github.io # Required by Liquid based themes
+timezone:           Berlin/Europe # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Build Settings
+source: ./
+destination: ./_site
+
+# Content visibility settings (for theme: tale)
+hide_footer: true
+hide_theme_info: true
+nav_show_author: false
+# Content visibility settings (for theme: the-plain)
+#show_footer:        true
+
+# Theme
+#theme: tale
+# jekyll themes (fetched directly from github repos)
+# NOTE: the only ones working as remote theme seem to be: the-plain, thinkspace, hpstr
+#remote_theme: hoijui/the-plain
+#remote_theme: heiswayi/the-plain
+#remote_theme: heiswayi/thinkspace
+#remote_theme: nielsenramon/chalk
+#remote_theme: LeNPaul/Lagrange # might also be available directly as (non-remote) "theme: 'lagrange'"
+#remote_theme: sharu725/hagura # might also be available directly as (non-remote) "theme: 'hagura'"
+#remote_theme: pages-themes/hacker # is also be available directly as (non-remote) "theme: 'hacker'"
+#remote_theme: pages-themes/cayman # is also be available directly as (non-remote) "theme: 'cayman'"
+#remote_theme: chesterhow/tale  # might also be available directly as (non-remote) "theme: 'tale'"
+remote_theme: hoijui/tale  # see https://github.com/hoijui/tale/
+#remote_theme: alshedivat/al-folio
+#remote_theme: mmistakes/hpstr-jekyll-theme  # might also be available directly as (non-remote) "theme: 'hpstr'"
+#remote_theme: jekyller/jasper2  # might also be available directly as (non-remote) "theme: 'jasper2'"
+#remote_theme: broccolini/swiss
+
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "README.md", "CNAME", "vendor", "Gemfile", "jk" ]
+plugins:
+  - jekyll-sitemap
+  - jekyll-remote-theme
+#  - jekyll-assets # used by some themes
+  - jekyll-paginate # used by some themes
+#  - hacker # a theme
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author: "Robin Vobruba"
+      author_email: hoijui.quaero@gmail.com
+
